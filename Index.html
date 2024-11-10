@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            background-color: #2d3748;
+            min-height: 100vh;
+        }
+        .sidebar .nav-link {
+            color: rgba(255,255,255,.7);
+            padding: 0.5rem 1rem;
+        }
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            color: white;
+            background-color: rgba(255,255,255,.1);
+        }
+        .card {
+            border: none;
+            color: white;
+        }
+        .card .see-all {
+            color: white;
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+        .card .see-all:hover {
+            text-decoration: underline;
+        }
+        .students-card { background-color: #2b6cb0; }
+        .rooms-card { background-color: #48bb78; }
+        .courses-card { background-color: #0bc5ea; }
+        .registered-card { background-color: #4299e1; }
+        .new-complaints-card { background-color: #f56565; }
+        .process-card { background-color: #ed8936; }
+        .closed-card { background-color: #48bb78; }
+        .feedback-card { background-color: #0bc5ea; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-auto px-0 sidebar">
+                <div class="d-flex flex-column">
+                    <div class="p-3 text-white">
+                        <h5>Hostel Management System</h5>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="#" class="nav-link active">
+                            <i class="bi bi-house-door me-2"></i> Dashboard
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-book me-2"></i> Courses
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-building me-2"></i> Rooms
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person-plus me-2"></i> Student Registration
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-people me-2"></i> Manage Students
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-square-text me-2"></i> Complaints
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-dots me-2"></i> Feedback
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-clock-history me-2"></i> User Access Logs
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col">
+                <div class="p-3 border-bottom bg-light">
+                    <h4>Dashboard</h4>
+                </div>
+                
+                <div class="p-4">
+                    <!-- First Row -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <div class="card students-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">5</h1>
+                                    <p class="text-uppercase small mb-2">Students</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card rooms-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">6</h1>
+                                    <p class="text-uppercase small mb-2">Total Rooms</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card courses-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">7</h1>
+                                    <p class="text-uppercase small mb-2">Total Courses</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <div class="card registered-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">7</h1>
+                                    <p class="text-uppercase small mb-2">Registered Complaints</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card new-complaints-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">1</h1>
+                                    <p class="text-uppercase small mb-2">New Complaints</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card process-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">1</h1>
+                                    <p class="text-uppercase small mb-2">In Process Complaints</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card closed-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">5</h1>
+                                    <p class="text-uppercase small mb-2">Closed Complaints</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card feedback-card">
+                                <div class="card-body">
+                                    <h1 class="display-4 mb-0">4</h1>
+                                    <p class="text-uppercase small mb-2">Total Feedbacks</p>
+                                    <a href="#" class="see-all d-flex align-items-center">
+                                        See all <i class="bi bi-chevron-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+  </html>
